@@ -1,4 +1,4 @@
-https://github.com/aenika/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
+![project status baidge](https://github.com/aenika/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 # Проект yamdb_final
 
