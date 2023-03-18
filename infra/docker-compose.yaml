@@ -11,6 +11,7 @@ services:
       - ./.env
 
   web:
+    image: aennika/api_yamdb:latest
     build: ../api_yamdb/
     restart: always
     volumes:
