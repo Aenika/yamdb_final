@@ -41,7 +41,7 @@ class MeUser(APIView):
         )
         if serializer.is_valid():
             serializer.save()
-            return Response(serializer.data)
+        return Response(serializer.data)
 
 
 class CheckCode(APIView):
