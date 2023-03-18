@@ -2,19 +2,13 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, viewsets
 from rest_framework.generics import get_object_or_404
 from rest_framework.pagination import LimitOffsetPagination
-
-
 from reviews.models import Category, Comment, Genre, Review, Title
+
 from .filters import FilterForTitle
 from .permissions import IsAdminModeratorOwnerOrReadOnly, IsAdminOrReadOnly
-from .serializers import (
-    CategorySerializer,
-    CommentSerializers,
-    GenreSerializer,
-    ReviewSerializers,
-    TitleReadSerializer,
-    TitleSerializer,
-)
+from .serializers import (CategorySerializer, CommentSerializers,
+                          GenreSerializer, ReviewSerializers,
+                          TitleReadSerializer, TitleSerializer)
 from .viewsets import CreateDeleteListViewSet
 
 

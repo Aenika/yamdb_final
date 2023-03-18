@@ -1,6 +1,5 @@
-from rest_framework import permissions
-
 from core.constants import ADMIN, MODERATOR
+from rest_framework import permissions
 
 
 class IsAdminOrReadOnly(permissions.BasePermission):

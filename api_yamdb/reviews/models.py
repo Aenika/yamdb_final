@@ -1,19 +1,11 @@
-from django.core.validators import (
-    MaxValueValidator,
-    MinValueValidator
-)
-from django.db import models
-
-from .constants import (
-    CHARS_FOR_NAME,
-    CHARS_FOR_SLUG,
-    CHARS_FOR_TEXT,
-    MAX_SCORE,
-    MIN_SCORE
-)
-from .validators import validate_not_future
 from core.models import CreatedModel
+from django.core.validators import MaxValueValidator, MinValueValidator
+from django.db import models
 from users.models import User
+
+from .constants import (CHARS_FOR_NAME, CHARS_FOR_SLUG, CHARS_FOR_TEXT,
+                        MAX_SCORE, MIN_SCORE)
+from .validators import validate_not_future
 
 
 class Category(models.Model):
