@@ -8,4 +8,4 @@ RUN pip3 install -r requirements.txt --no-cache-dir
 
 CMD ["gunicorn", "api_yamdb.wsgi:application", "--bind", "0:5000" ]
 
-LABEL author='https://github.com/Aenika' version=1 broken_keyboards=8
+LABEL author='https://github.com/Aenika' version=1 broken_keyboards=9
